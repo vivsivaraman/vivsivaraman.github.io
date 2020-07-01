@@ -1,0 +1,40 @@
+body {
+  padding-top: 20px;
+}
+
+figure {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+figure > .img-fluid {
+  max-width: 900px;
+}
+
+.spect-img {
+  max-width: 300px;
+}
+
+.spect-data {
+  table-layout: fixed;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.spect-data th, .spect-data td{
+  max-width: 25%;
+  min-width: 200px;
+  padding: 6px;
+}
+
+.spect-data td > p {
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.spect-data audio {
+  display: block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}

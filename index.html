@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Demo</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css"
+</head>
+<body>
+  <div class="container-md">
+    <h1 class="pb-4">Unsupervised Audio Source Separation using Generative Priors</h1>
+    <div class="pb-4">
+      <h4>Vivek Narayanaswamy, Jayaraman J. Thiagarajan, Rushil Anirudh and Andreas Spanias</h4>
+      <p>Link to our paper: <a href="https://arxiv.org/abs/2005.13769">Click here</a></p>
+    </div>
+
+    <h2 class="pb-4">Overview:</h2>
+    <figure class="pb-5">
+      <img class="img-fluid" src="https://raw.githubusercontent.com/vivsivaraman/sourcesepganprior/master/blockdiagram.png" />
+    </figure>
+
+    <h2 class="pb-4">Comparison of proposed approach with baselines</h2>
+    <table class="spect-data align-middle pb-5">
+      <thead>
+        <tr class="text-center">
+          <th scope="col">Mixture Type</th>
+          <th scope="col">Mixture Audio</th>
+          <th scope="col">Ground Truth Sources</th>
+          <th scope="col">Proposed Approach</th>
+          <th scope="col">Deep Audio Prior (DAP)</th>
+          <th scope="col">NMF</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <p>Digit-Drums</p>
+            <p>(Digit)</p>
+          </td>
+          <td rowspan="2">
+            <audio
+              controls
+              preload="auto"
+              src="audio/digit_drums/Ground Truth Mixture/mix_799.wav"
+            >
+            </audio>
+          </td>
+          <td rowspan="2">
+            <audio
+              controls
+              preload="auto"
+              src="audio/digit_drums/Ground Truth Sources/digit_799.wav"
+            >
+            </audio>
+            <audio
+              controls
+              preload="auto"
+              src="audio/digit_drums/Ground Truth Sources/drums_799.wav"
+            >
+            </audio>
+          </td>
+          <td rowspan="2">
+            <audio
+              controls
+              preload="auto"
+              src="audio/digit_drums/Proposed/digit_799.wav"
+            >
+            </audio>
+            <audio
+              controls
+              preload="auto"
+              src="audio/digit_drums/Proposed/drums_799.wav"
+            >
+            </audio>
+          </td>
+          <td rowspan="2">
+            <audio
+              controls
+              preload="auto"
+              src="audio/digit_drums/DAP/digit.wav"
+            >
+            </audio>
+            <audio
+              controls
+              preload="auto"
+              src="audio/digit_drums/DAP/drums.wav"
+            >
+            </audio>
+          </td>
+          <td rowspan="2">
+            <audio
+              controls
+              preload="auto"
+              src="audio/digit_drums/NMF/digit_800(799).wav"
+            >
+            </audio>
+            <audio
+              controls
+              preload="auto"
+              src="audio/digit_drums/NMF/drums_800(799).wav"
+            >
+            </audio>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Digit-Drums</p>
+            <p>(Drums)</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
